@@ -120,12 +120,12 @@ namespace LiveSplit.Options
             parent.AppendChild(resetKey);
 
             var keyHibernateRun = document.CreateElement("HibernateRunKey");
-            if (keyHibernateRun != null)
+            if (HibernateRunKey != null)
                 keyHibernateRun.InnerText = HibernateRunKey.ToString();
             parent.AppendChild(keyHibernateRun);
 
             var loadRunKey = document.CreateElement("LoadRunKey");
-            if (loadRunKey != null)
+            if (LoadRunKey != null)
                 loadRunKey.InnerText = LoadRunKey.ToString();
             parent.AppendChild(loadRunKey);
 
